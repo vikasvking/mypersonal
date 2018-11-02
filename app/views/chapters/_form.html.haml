@@ -1,0 +1,9 @@
+= form_for([@study,@study.chapters.build]) do |form|
+ 
+  .field
+    = form.label :name
+    = form.text_field :name
+  
+  
+  .actions
+    = form.submit

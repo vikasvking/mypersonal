@@ -1,0 +1,17 @@
+= form_with(model: study, local: true) do |form|
+  - if study.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(study.errors.count, "error")
+        prohibited this study from being saved:
+      %ul
+        - study.errors.full_messages.each do |message|
+          %li= message
+  .field
+    = form.label :subject
+    = form.select :subject, ["History","Geography","Political Science","Economics"],prompt: 'select one'
+  .field
+    = form.label :book
+    = form.text_field :book
+  .actions
+    = form.submit
