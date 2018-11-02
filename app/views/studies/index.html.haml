@@ -1,18 +1,44 @@
 %p#notice= notice
-%h1 Studies
-%table
-  %thead
-    %tr
-      %th Subject
-      %th Book
-      %th{:colspan => "3"}
-  %tbody
-    - @studies.each do |study|
-      %tr
-        %td= study.subject
-        %td= study.book
-        %td= link_to 'Show', study
-        %td= link_to 'Edit', edit_study_path(study)
-        %td= link_to 'Destroy', study, method: :delete, data: { confirm: 'Are you sure?' }
-%br/
-= link_to 'New Study', new_study_path
+.row
+  .col-md-9
+    - @studies.each_slice(3) do |i|
+      .row
+        .col-md-4
+          - if i[0]!=nil
+            .panel.panel-primary
+              .panel-heading
+                %h3= i[0].subject
+              .panel-body
+                %h4= i[0].book
+              .panel-footer
+                = link_to 'Show',i[0],class: 'btn btn-info'
+                = link_to 'Edit',edit_study_path(i[0]),class: 'btn btn-primary'
+                = link_to 'Delete',i[0],method: :delete,data: {confirm: 'are you sure'},class: 'btn btn-danger'
+
+        .col-md-4
+          - if i[1]!=nil
+            .panel.panel-primary
+              .panel-heading
+                = i[1].subject
+              .panel-body
+                = i[1].book
+              .panel-footer
+                = link_to 'Show',i[1],class: 'btn btn-info'
+                = link_to 'Edit',edit_study_path(i[1]),class: 'btn btn-primary'
+                = link_to 'Delete',i[1],method: :delete,data: {confirm: 'are you sure'},class: 'btn btn-danger'
+        .col-md-4
+          - if i[2]!=nil
+            .panel.panel-primary
+              .panel-heading
+                = i[2].subject
+              .panel-body
+                = i[2].book
+              .panel-footer
+                = link_to 'Show',i[2],class: 'btn btn-info'
+                = link_to 'Edit',edit_study_path(i[2]),class: 'btn btn-primary'
+                = link_to 'Delete',i[2],method: :delete,data: {confirm: 'are you sure'},class: 'btn btn-danger'
+  .col-md-3
+    = link_to 'New Study', new_study_path,class: 'btn btn-primary'
+
+
+

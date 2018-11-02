@@ -30,9 +30,11 @@ class StudiesController < ApplicationController
       if @study.save
         format.html { redirect_to @study, notice: 'Study was successfully created.' }
         format.json { render :show, status: :created, location: @study }
+
       else
         format.html { render :new }
         format.json { render json: @study.errors, status: :unprocessable_entity }
+
       end
     end
   end

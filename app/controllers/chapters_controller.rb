@@ -21,15 +21,22 @@ class ChaptersController < ApplicationController
   def edit
   end
 
+
+  def addRevision
+    @chapter=Chapter.find(params[:id])
+    x=@chapter.revision+=1
+    @chapter.update_attribute(:revision,x)
+    redirect_to Study.find(params[:study_id])
+  end
   # POST /chapters
   # POST /chapters.json
   def create
     @study=Study.find(params[:study_id])
-    @chapter = @study.chapters.build.new(chapter_params)
-
+    @chapter = @study.chapters.build(chapter_params)
+    @chapter.revision=0
     respond_to do |format|
       if @chapter.save
-        format.html { redirect_to @chapter, notice: 'Chapter was successfully created.' }
+        format.html { redirect_to @study, notice: 'Chapter was successfully created.' }
         format.json { render :show, status: :created, location: @chapter }
       else
         format.html { render :new }

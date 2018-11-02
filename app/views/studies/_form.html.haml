@@ -1,4 +1,4 @@
-= form_with(model: study, local: true) do |form|
+= form_with(model: study) do |form|
   - if study.errors.any?
     #error_explanation
       %h2
@@ -7,11 +7,11 @@
       %ul
         - study.errors.full_messages.each do |message|
           %li= message
-  .field
+  .form-group
     = form.label :subject
-    = form.select :subject, ["History","Geography","Political Science","Economics"],prompt: 'select one'
-  .field
+    = form.select :subject, ["History","Geography","Political Science","Economics"],prompt: 'select one',class: 'form-control'
+  .form-group
     = form.label :book
-    = form.text_field :book
+    = form.text_field :book,class: 'form-control'
   .actions
     = form.submit

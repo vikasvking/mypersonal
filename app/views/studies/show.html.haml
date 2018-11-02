@@ -1,11 +1,26 @@
-%p#notice= notice
-%p
-  %strong Subject:
-  = @study.subject
-%p
-  %strong Book:
-  = @study.book
-= link_to 'Edit', edit_study_path(@study)
-|
-= link_to 'Back', studies_path
-= render 'chapters/form'
+.row
+  .col-md-9
+    .panel.panel-primary
+      .panel-heading
+        = @study.subject
+        = @study.book
+      .panel-body
+        %table.table
+          %tr
+            %th
+              Chapter
+            %th
+              No of revision
+            %th
+              Action
+          - @study.chapters.each do |i|
+            %tr
+              %td= i.name
+              %td= i.revision
+              %td= link_to 'Add revision',addRevision_path(@study,i),data: {confirm: 'add revision'}
+
+
+  .col-md-3
+    = link_to 'Edit', edit_study_path(@study),class: 'btn btn-primary'
+    %br
+    = render 'chapters/form'
