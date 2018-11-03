@@ -15,44 +15,21 @@
           = link_to "Todo",todos_path
 
         %li
-          %a{:href => "#"} Link
+          = link_to "Current Affairs",currentaffairs_path
         %li.dropdown
           %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-            Dropdown
+            Add
             %span.caret
           %ul.dropdown-menu
             %li
-              %a{:href => "#"} Action
+              =link_to "New Todo",new_todo_path
             %li
-              %a{:href => "#"} Another action
+              = link_to "New current Affair task",new_currentaffair_path
+
             %li
-              %a{:href => "#"} Something else here
-            %li.divider{:role => "separator"}
-            %li
-              %a{:href => "#"} Separated link
-            %li.divider{:role => "separator"}
-            %li
-              %a{:href => "#"} One more separated link
+              = link_to "New Subject",new_study_path
+
       %form.navbar-form.navbar-left
-        .form-group
-          %input.form-control{:placeholder => "Search", :type => "text"}/
-        %button.btn.btn-default{:type => "submit"} Submit
-      %ul.nav.navbar-nav.navbar-right
-        %li
-          %a{:href => "#"} Link
-        %li.dropdown
-          %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-            Dropdown
-            %span.caret
-          %ul.dropdown-menu
-            %li
-              %a{:href => "#"} Action
-            %li
-              %a{:href => "#"} Another action
-            %li
-              %a{:href => "#"} Something else here
-            %li.divider{:role => "separator"}
-            %li
-              %a{:href => "#"} Separated link
+
     / /.navbar-collapse
   / /.container-fluid
