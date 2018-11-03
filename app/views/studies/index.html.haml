@@ -1,42 +1,86 @@
 %p#notice= notice
 .row
   .col-md-9
-    - @studies.each_slice(3) do |i|
-      .row
-        .col-md-4
-          - if i[0]!=nil
-            .panel.panel-primary
-              .panel-heading
-                %h3= i[0].subject
-              .panel-body
-                %h4= i[0].book
-              .panel-footer
-                = link_to 'Show',i[0],class: 'btn btn-info'
-                = link_to 'Edit',edit_study_path(i[0]),class: 'btn btn-primary'
-                = link_to 'Delete',i[0],method: :delete,data: {confirm: 'are you sure'},class: 'btn btn-danger'
+    .panel.panel-primary
+      .panel-heading
+        %h2 History
+      .panel-body
+        %table.table
+          %tr
+            %th Book
+            %th Edit
+            %th Delete
 
-        .col-md-4
-          - if i[1]!=nil
-            .panel.panel-primary
-              .panel-heading
-                = i[1].subject
-              .panel-body
-                = i[1].book
-              .panel-footer
-                = link_to 'Show',i[1],class: 'btn btn-info'
-                = link_to 'Edit',edit_study_path(i[1]),class: 'btn btn-primary'
-                = link_to 'Delete',i[1],method: :delete,data: {confirm: 'are you sure'},class: 'btn btn-danger'
-        .col-md-4
-          - if i[2]!=nil
-            .panel.panel-primary
-              .panel-heading
-                = i[2].subject
-              .panel-body
-                = i[2].book
-              .panel-footer
-                = link_to 'Show',i[2],class: 'btn btn-info'
-                = link_to 'Edit',edit_study_path(i[2]),class: 'btn btn-primary'
-                = link_to 'Delete',i[2],method: :delete,data: {confirm: 'are you sure'},class: 'btn btn-danger'
+          - @his.each do |i|
+            %tr
+              %td= link_to i.book,i
+              %td= link_to "Edit",edit_study_path(i)
+              %td= link_to "delete",i,method: :delete
+
+
+
+    .panel.panel-primary
+      .panel-heading
+        %h2 Geography
+      .panel-body
+        %table.table
+          %tr
+            %th Book
+            %th Edit
+            %th Delete
+
+          - @his.each do |i|
+            %tr
+              %td= link_to i.book,i
+              %td= link_to "Edit",edit_study_path(i)
+              %td= link_to "delete",i,method: :delete
+
+
+    .panel.panel-primary
+      .panel-heading
+        %h2 Economics
+      .panel-body
+        %table.table
+          %tr
+            %th Book
+            %th Edit
+            %th Delete
+
+          - @his.each do |i|
+            %tr
+              %td= link_to i.book,i
+              %td= link_to "Edit",edit_study_path(i)
+              %td= link_to "delete",i,method: :delete
+    .panel.panel-primary
+      .panel-heading
+        %h2 Political science
+      .panel-body
+        %table.table
+          %tr
+            %th Book
+            %th Edit
+            %th Delete
+
+          - @his.each do |i|
+            %tr
+              %td= link_to i.book,i
+              %td= link_to "Edit",edit_study_path(i)
+              %td= link_to "delete",i,method: :delete
+    .panel.panel-primary
+      .panel-heading
+        %h2 Mechanical
+      .panel-body
+        %table.table
+          %tr
+            %th Book
+            %th Edit
+            %th Delete
+
+          - @his.each do |i|
+            %tr
+              %td= link_to i.book,i
+              %td= link_to "Edit",edit_study_path(i)
+              %td= link_to "delete",i,method: :delete
   .col-md-3
     = link_to 'New Study', new_study_path,class: 'btn btn-primary'
 

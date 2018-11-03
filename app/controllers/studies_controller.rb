@@ -5,6 +5,11 @@ class StudiesController < ApplicationController
   # GET /studies.json
   def index
     @studies = Study.all
+    @his=Study.where(subject: 'History')
+    @geo=Study.where(subject: 'Geography')
+    @pol=Study.where(subject: 'Political Science')
+    @eco=Study.where(subject: 'Economics')
+    @mec=Study.where(subject: 'Mechanical')
   end
 
   # GET /studies/1
