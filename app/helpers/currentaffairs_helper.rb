@@ -1,0 +1,2 @@
+module CurrentaffairsHelper
+end

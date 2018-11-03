@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :currentaffairs
   resources :todos do |i|
     resources :tasks
   end

@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @currentaffair.name
+
+= link_to 'Edit', edit_currentaffair_path(@currentaffair)
+\|
+= link_to 'Back', currentaffairs_path
