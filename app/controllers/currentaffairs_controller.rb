@@ -69,6 +69,6 @@ class CurrentaffairsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def currentaffair_params
-      params.require(:currentaffair).permit(:name)
+      params.require(:currentaffair).permit(:name,:source)
     end
 end

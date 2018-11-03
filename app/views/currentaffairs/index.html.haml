@@ -1,21 +1,21 @@
 %h1 Listing currentaffairs
 
-%table
+%table.table
   %thead
     %tr
       %th Name
-      %th
-      %th
-      %th
+      %th source
+      %th Edit
+      %th Delete
 
   %tbody
     - @currentaffairs.each do |currentaffair|
       %tr
-        %td= currentaffair.name
-        %td= link_to 'Show', currentaffair
+        %td= link_to currentaffair.name.to_date,currentaffair
+        %td= currentaffair.source
         %td= link_to 'Edit', edit_currentaffair_path(currentaffair)
         %td= link_to 'Destroy', currentaffair, method: :delete, data: { confirm: 'Are you sure?' }
 
 %br
 
-= link_to 'New Currentaffair', new_currentaffair_path
+

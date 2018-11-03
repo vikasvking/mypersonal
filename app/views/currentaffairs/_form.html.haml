@@ -5,9 +5,12 @@
       %ul
         - @currentaffair.errors.full_messages.each do |message|
           %li= message
-
+  .form-group
+    = f.label :source
+    = f.select :source,['IAS BABA','INSIGHT'],class: 'form-control'
   .field
     = f.label :name
     = f.datetime_select :name,class: 'form-control'
+
   .actions
     = f.submit 'Save',class: 'btn btn-primary'
