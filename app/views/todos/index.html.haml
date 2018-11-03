@@ -1,0 +1,41 @@
+%p#notice= notice
+.row
+  .col-md-9
+    - @todos.each_slice(3) do |i|
+      .row
+        .col-md-4
+          - if i[0]!=nil
+            .panel.panel-primary
+              .panel-heading
+                %h3= i[0].name
+
+              .panel-footer
+                = link_to 'Show',i[0],class: 'btn btn-info'
+                = link_to 'Edit',edit_todo_path(i[0]),class: 'btn btn-primary'
+                = link_to 'Delete',i[0],method: :delete,data: {confirm: 'are you sure'},class: 'btn btn-danger'
+
+        .col-md-4
+          - if i[1]!=nil
+            .panel.panel-primary
+              .panel-heading
+                = i[1].name
+
+              .panel-footer
+                = link_to 'Show',i[1],class: 'btn btn-info'
+                = link_to 'Edit',edit_todo_path(i[1]),class: 'btn btn-primary'
+                = link_to 'Delete',i[1],method: :delete,data: {confirm: 'are you sure'},class: 'btn btn-danger'
+        .col-md-4
+          - if i[2]!=nil
+            .panel.panel-primary
+              .panel-heading
+                = i[2].name
+
+              .panel-footer
+                = link_to 'Show',i[2],class: 'btn btn-info'
+                = link_to 'Edit',edit_todo_path(i[2]),class: 'btn btn-primary'
+                = link_to 'Delete',i[2],method: :delete,data: {confirm: 'are you sure'},class: 'btn btn-danger'
+  .col-md-3
+    = link_to 'New todo', new_todo_path,class: 'btn btn-primary'
+
+
+

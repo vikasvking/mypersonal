@@ -12,9 +12,8 @@
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       %ul.nav.navbar-nav
         %li.active
-          %a{:href => "#"}
-            Link
-            %span.sr-only (current)
+          = link_to "Todo",todos_path
+
         %li
           %a{:href => "#"} Link
         %li.dropdown

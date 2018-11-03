@@ -1,0 +1,28 @@
+%p#notice= notice
+
+.row
+  .col-md-9
+    .panel.panel-primary
+      .panel-heading
+        %h3= @todo.name
+      .panel-body
+        %table.table
+          %tr
+            %td Name
+            %td action
+          - @todo.tasks.each do |i|
+            %tr
+              %td
+                - if i.done==true
+                  %del= i.name
+                - else
+                  = i.name
+              %td= link_to "Done",done_path(@todo,i)
+  .col-md-3
+    = link_to 'Edit', edit_todo_path(@todo)
+
+    = link_to 'Back', todos_path
+
+
+
+    = render 'tasks/form'
