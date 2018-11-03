@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a0f5cb9-d106-402d-9a5a-005c6d324871" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/controllers/studies_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/studies_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/studies/_form.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/studies/_form.html.haml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/studies/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/studies/index.html.haml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -53,14 +51,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="erb" value="63" />
-          <entry key="haml" value="3306" />
+          <entry key="haml" value="3318" />
           <entry key="js" value="50" />
           <entry key="rb" value="798" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Haml" value="3306" />
+          <entry key="Haml" value="3318" />
           <entry key="JavaScript" value="50" />
           <entry key="RHTML" value="63" />
           <entry key="Ruby" value="798" />
@@ -91,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/studies/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+            <state relative-caret-position="196">
+              <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -358,12 +356,12 @@
       <workItem from="1541158375159" duration="344000" />
       <workItem from="1541166604751" duration="8392000" />
       <workItem from="1541213591891" duration="164000" />
-      <workItem from="1541227026273" duration="3746000" />
+      <workItem from="1541227026273" duration="4173000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12646000" />
+    <option name="totallyTimeSpent" value="13073000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1366" height="738" extended-state="6" />
@@ -573,8 +571,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/studies/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+        <state relative-caret-position="196">
+          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
         </state>
       </provider>
     </entry>
