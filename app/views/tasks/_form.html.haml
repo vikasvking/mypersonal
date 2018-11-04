@@ -3,6 +3,6 @@
 
   .field
     = f.label :name
-    = f.text_field :name
+    = f.select(:name,Chapter.all.collect{|d| d.name+"."+Study.find_by_id(d.study_id).book+"."+Study.find_by_id(d.study_id).subject})
   .actions
     = f.submit 'Save'
