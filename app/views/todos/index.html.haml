@@ -8,6 +8,14 @@
             .panel.panel-primary
               .panel-heading
                 %h3= i[0].name
+              .panel-body
+
+
+                .progress
+                  .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "60", :role => "progressbar", :style => "width: #{(i[0].tasks.where(done: true).count/i[0].tasks.count)*100}%;"}
+                    = (i[0].tasks.where(done: true).count/i[0].tasks.count)*100
+                    percent
+
 
               .panel-footer
                 = link_to 'Show',i[0],class: 'btn btn-info'
@@ -19,7 +27,13 @@
             .panel.panel-primary
               .panel-heading
                 = i[1].name
+              .panel-body
 
+
+                .progress
+                  .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "60", :role => "progressbar", :style => "width: #{(i[0].tasks.where(done: true).count/i[0].tasks.count)*100}%;"}
+                    = (i[0].tasks.where(done: true).count/i[0].tasks.count)*100
+                    percent
               .panel-footer
                 = link_to 'Show',i[1],class: 'btn btn-info'
                 = link_to 'Edit',edit_todo_path(i[1]),class: 'btn btn-primary'
@@ -29,7 +43,13 @@
             .panel.panel-primary
               .panel-heading
                 = i[2].name
+              .panel-body
 
+
+                .progress
+                  .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "60", :role => "progressbar", :style => "width: #{(i[0].tasks.where(done: true).count/i[0].tasks.count)*100}%;"}
+                    = (i[0].tasks.where(done: true).count/i[0].tasks.count)*100
+                    percent
               .panel-footer
                 = link_to 'Show',i[2],class: 'btn btn-info'
                 = link_to 'Edit',edit_todo_path(i[2]),class: 'btn btn-primary'
