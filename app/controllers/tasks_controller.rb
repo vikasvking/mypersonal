@@ -29,9 +29,13 @@ class TasksController < ApplicationController
 
     @chapter=Chapter.find_by_name(@task.name.split(".").first)
     x=@chapter.revision+=1
-    @chapter.update_attribute(:revision,x)
+    if @chapter.update_attribute(:revision,x)
+      redirect_to Todo.find(params[:todo_id]),notice: 'success'
+    else
+      redirect_to Todo.find(params[:todo_id]),notice: 'Could not add revision'
+    end
 
-    redirect_to Todo.find(params[:todo_id])
+
   end
 
   # POST /tasks
