@@ -26,8 +26,8 @@ class TasksController < ApplicationController
     @task=Task.find(params[:id])
     @task.update_attribute(:done,true)
 
-
-    @chapter=Chapter.find_by_name(@task.name.split(".").first)
+    @book=Study.where(book: @task.name.split(".")[1]).where(subject: @task.name.split(".")[2])
+    @chapter=Chapter.where(study_id: @book.ids).where(name: @task.name.split(".").first).first
     x=@chapter.revision+=1
     if @chapter.update_attribute(:revision,x)
       redirect_to Todo.find(params[:todo_id]),notice: 'success'
