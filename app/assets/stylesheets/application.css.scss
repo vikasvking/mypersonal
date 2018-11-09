@@ -15,3 +15,8 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.no-style{
+  text-decoration: none !important;
+  cursor: auto;
+}
