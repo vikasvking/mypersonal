@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'home/index'
   resources :currentaffairs
   resources :todos do |i|
     resources :tasks
@@ -10,7 +11,7 @@ Rails.application.routes.draw do
     resources :chapters
   end
 
-  root 'studies#index'
+  root 'home#index'
 
 
   get 'studies/:study_id/addRevision/:id',action: :addRevision,controller: 'chapters',as: 'addRevision'
