@@ -10,6 +10,7 @@
           %tr
             %td Name
             %td action
+            %td action
           - @todo.tasks.each do |i|
             %tr
               %td
@@ -19,7 +20,10 @@
                   = i.name
               - if i.done!=true
                 %td= link_to "Done",done_path(@todo,i)
+                %td= link_to 'delete',[@todo,i],method: :delete,data: {confirm: 'sure'}
               - else
+                %td
+                %td= link_to 'delete',[@todo,i],method: :delete,data: {confirm: 'sure'}
 
 
   .col-md-3
