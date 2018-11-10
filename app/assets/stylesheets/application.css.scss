@@ -15,7 +15,10 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+body{
+  font-family: 'Titillium Web', sans-serif !important;
+}
 .no-style{
   text-decoration: none !important;
   cursor: auto;

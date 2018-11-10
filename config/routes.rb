@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :pendings
   get 'home/index'
   resources :currentaffairs
   resources :todos do |i|

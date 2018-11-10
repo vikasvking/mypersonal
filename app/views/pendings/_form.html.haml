@@ -1,0 +1,13 @@
+= form_for @pending do |f|
+  - if @pending.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@pending.errors.count, "error")} prohibited this pending from being saved:"
+      %ul
+        - @pending.errors.full_messages.each do |message|
+          %li= message
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .actions
+    = f.submit 'Save'

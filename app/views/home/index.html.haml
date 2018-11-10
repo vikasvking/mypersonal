@@ -1,6 +1,6 @@
 .row
   .col-md-9
-    .panel.panel-default
+    .panel.panel-primary
       .panel-heading
         %h3
           Today is
@@ -27,5 +27,22 @@
             %h4 Current Affairs
           - else
             %h4 Revision
+        %p
+          %h3
+            you have
+            = Pending.count
+            pending work
+        %p
+          %h4
+            - Todo.all.each do |i|
+              %b= i.name
+              task has
+              %b= i.tasks.where(done: true).count
+              task done out of
+              %b= i.tasks.count
+
+      .panel-footer
+        = link_to "New todo",new_todo_path,class: 'btn btn-info'
+        = link_to "New Book",new_study_path,class: 'btn btn-info'
 
   .col-md-3

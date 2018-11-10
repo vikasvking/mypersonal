@@ -1,0 +1,21 @@
+%h1 Listing pendings
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th
+      %th
+      %th
+
+  %tbody
+    - @pendings.each do |pending|
+      %tr
+        %td= pending.name
+        %td= link_to 'Show', pending
+        %td= link_to 'Edit', edit_pending_path(pending)
+        %td= link_to 'Destroy', pending, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Pending', new_pending_path
