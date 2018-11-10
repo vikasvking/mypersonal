@@ -9,8 +9,8 @@
         %p
           %h3
             Last thing you read was
-          - if  Task.order('updated_at DESC').first.name.split(".").join(" ")
-            %h4= Task.order('updated_at DESC').first.name.split(".").join(" ")
+            - if  Task.order('updated_at DESC').first.name.split(".").join(" ")
+              %h4= Task.order('updated_at DESC').first.name.split(".").join(" ")
         %p
           %h3 Toady You have to read
           - if Time.now.strftime("%A")=='Monday'
