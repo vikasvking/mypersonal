@@ -2,6 +2,29 @@
   .col-md-9
     .panel.panel-default
       .panel-heading
-        %h3 Daily routine
+        %h3
+          Today is
+          = Time.now.strftime('%A')
+      .panel-body
+        %p
+          %h3
+            Last thing you read was
+          %h4= Task.order('updated_at DESC').first.name.split(".").join(" ")
+        %p
+          %h3 Toady You have to read
+          - if Time.now.strftime("%A")=='Monday'
+            %h4 History
+          - elsif   Time.now.strftime("%A")=='Tuesday'
+            %h4 Geography
+          - elsif Time.now.strftime("%A")=='Wednesday'
+            %h4 Political Science
+          - elsif Time.now.strftime("%A")=='Thrusday'
+            %h4 Economics
+          - elsif Time.now.strftime("%A")=='Friday'
+            %h4 Mechanical
+          - elsif Time.now.strftime("%A")=='Saturday'
+            %h4 Current Affairs
+          - else
+            %h4 Revision
 
   .col-md-3

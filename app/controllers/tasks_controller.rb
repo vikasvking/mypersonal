@@ -25,7 +25,6 @@ class TasksController < ApplicationController
   def addRevision
     @task=Task.find(params[:id])
     @task.update_attribute(:done,true)
-
     @book=Study.where(book: @task.name.split(".")[1]).where(subject: @task.name.split(".")[2])
     @chapter=Chapter.where(study_id: @book.ids).where(name: @task.name.split(".").first).first
     x=@chapter.revision+=1
@@ -41,7 +40,6 @@ class TasksController < ApplicationController
   # POST /tasks
   # POST /tasks.json
   def create
-
 
     @todo=Todo.find(params[:todo_id])
     @task = @todo.tasks.create(task_params)
