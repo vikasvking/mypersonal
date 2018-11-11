@@ -40,9 +40,6 @@ body{
   text-decoration: none !important;
   cursor: auto;
 }
-.progress {
-  @include progress-bar-variant(#6666ff);
-}
 .btn-block{
   margin: 10px;
 }
