@@ -16,8 +16,25 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+$dark: #455A64;
+$light: #607D8B;
+$few: #FDD835;
 body{
   font-family: 'Titillium Web', sans-serif !important;
+
+
+}
+.navbar{
+  border-radius: 0px !important;
+  border: none;
+  background-color: $dark;
+  padding-top: 10px;
+  color: #fff  !important;
+  padding-bottom: 10px;
+
+}
+.nav.navbar.navbar-inverse li {
+  color: #fff;
 }
 .no-style{
   text-decoration: none !important;
@@ -25,4 +42,36 @@ body{
 }
 .progress {
   @include progress-bar-variant(#6666ff);
+}
+.btn-block{
+  margin: 10px;
+}
+
+.panel{
+  border-radius: 0px !important;
+  border: none;
+  .panel-heading{
+    background-color: $dark;
+    border-radius: 0px !important;
+    box-shadow: none;
+  }
+  .panel-body{
+
+    border-radius: 0px !important;
+    border: none;
+    box-shadow: none;
+    margin: 0px;
+  }
+  .panel-footer{
+
+    border-radius: 0px !important;
+    box-shadow: none;
+    margin: 0px;
+  }
+}
+.btn{
+  border-radius: 0px !important;
+  background-color: $few;
+  border: none;
+  color: #222;
 }

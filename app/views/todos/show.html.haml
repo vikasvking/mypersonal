@@ -27,9 +27,82 @@
 
 
   .col-md-3
-    = link_to 'Edit', edit_todo_path(@todo),class: 'btn btn-primary'
 
-    = link_to 'Back', todos_path,class: 'btn btn-primary'
+    .row
+      %button.btn.btn-primary.btn-md.btn-block{"data-target" => "#myModal", "data-toggle" => "modal", :type => "button"}
+        History
+    .row
+      %button.btn.btn-primary.btn-md.btn-block{"data-target" => "#myModal2", "data-toggle" => "modal", :type => "button"}
+        Geography
+    .row
+      %button.btn.btn-primary.btn-md.btn-block{"data-target" => "#myModal3", "data-toggle" => "modal", :type => "button"}
+        Political science
+    .row
+      %button.btn.btn-primary.btn-md.btn-block{"data-target" => "#myModal4", "data-toggle" => "modal", :type => "button"}
+        Economics
+    .row
+      %button.btn.btn-primary.btn-md.btn-block{"data-target" => "#myModal5", "data-toggle" => "modal", :type => "button"}
+        Mechanical
+/ Modal
+#myModal.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h4#myModalLabel.modal-title History
+      .modal-body
+        = render 'tasks/form'
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
 
 
-    = render 'tasks/form'
+#myModal2.modal.fade{"aria-labelledby" => "myModalLabel2", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h4#myModalLabel2.modal-title Geography
+      .modal-body
+        = render 'tasks/form_geo'
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+
+
+
+#myModal3.modal.fade{"aria-labelledby" => "myModalLabel2", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h4#myModalLabel3.modal-title Political science
+      .modal-body
+        = render 'tasks/form_poi'
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+
+#myModal4.modal.fade{"aria-labelledby" => "myModalLabel2", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h4#myModalLabel4.modal-title Eco
+      .modal-body
+        = render 'tasks/form_eco'
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+
+#myModal5.modal.fade{"aria-labelledby" => "myModalLabel2", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h4#myModalLabel5.modal-title Mechanical
+      .modal-body
+        = render 'tasks/form_mech'
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
