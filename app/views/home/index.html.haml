@@ -3,6 +3,7 @@
     .panel.panel-primary
       .panel-heading
         %h3
+          Welcome Vikas
           Today is
           = Time.now.strftime('%A')
       .panel-body
@@ -10,30 +11,31 @@
           %h3
             Last thing you read was
             - if  Task.order('updated_at DESC').first!=nil
-              %h4= Task.order('updated_at DESC').first.name.split(".").join(" ")
+              = Task.order('updated_at DESC').first.name.split(".").join(" ")
         %p
-          %h3 Toady You have to read
-          - if Time.now.strftime("%A")=='Monday'
-            %h4 History
-          - elsif   Time.now.strftime("%A")=='Tuesday'
-            %h4 Geography
-          - elsif Time.now.strftime("%A")=='Wednesday'
-            %h4 Political Science
-          - elsif Time.now.strftime("%A")=='Thrusday'
-            %h4 Economics
-          - elsif Time.now.strftime("%A")=='Friday'
-            %h4 Mechanical
-          - elsif Time.now.strftime("%A")=='Saturday'
-            %h4 Current Affairs
-          - else
-            %h4 Revision
+          %h3
+            Toady You have to read
+            - if Time.now.strftime("%A")=='Monday'
+              History
+            - elsif   Time.now.strftime("%A")=='Tuesday'
+              Geography
+            - elsif Time.now.strftime("%A")=='Wednesday'
+              Political Science
+            - elsif Time.now.strftime("%A")=='Thrusday'
+              Economics
+            - elsif Time.now.strftime("%A")=='Friday'
+              Mechanical
+            - elsif Time.now.strftime("%A")=='Saturday'
+              Current Affairs
+            - else
+              Revision
         %p
           %h3
             you have
             = Pending.count
             pending work
         %p
-          %h4
+          %h3
             - Todo.all.each do |i|
               %b= i.name
               task has
