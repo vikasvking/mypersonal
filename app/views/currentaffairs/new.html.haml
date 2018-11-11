@@ -1,5 +1,9 @@
-%h1 New currentaffair
-
-= render 'form'
-
-= link_to 'Back', currentaffairs_path
+.row
+  .col-md-9
+    .panel.panel-primary
+      .panel-heading
+        %h3 Current affairs
+      .panel-body
+        = render 'form'
+      .panel-footer
+        = link_to 'Back', currentaffairs_path,class: 'btn btn-info'

@@ -14,6 +14,7 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
+  get ':id',action: :donecurrent,controller: 'currentaffairs',as: 'donecurrentaffairs'
 
   get 'studies/:study_id/addRevision/:id',action: :addRevision,controller: 'chapters',as: 'addRevision'
 

@@ -1,5 +1,5 @@
 class CurrentaffairsController < ApplicationController
-  before_action :set_currentaffair, only: [:show, :edit, :update, :destroy]
+  before_action :set_currentaffair, only: [:show, :edit, :update, :destroy,:donecurrent]
 
   # GET /currentaffairs
   # GET /currentaffairs.json
@@ -15,6 +15,12 @@ class CurrentaffairsController < ApplicationController
   # GET /currentaffairs/new
   def new
     @currentaffair = Currentaffair.new
+  end
+
+  def donecurrent
+    @currentaffair.update_attribute(:done,true)
+    redirect_to currentaffairs_path
+
   end
 
   # GET /currentaffairs/1/edit
@@ -69,6 +75,6 @@ class CurrentaffairsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def currentaffair_params
-      params.require(:currentaffair).permit(:name,:source)
+      params.require(:currentaffair).permit(:name,:source,:done)
     end
 end

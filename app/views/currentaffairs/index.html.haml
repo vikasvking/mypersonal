@@ -5,16 +5,24 @@
     %tr
       %th Name
       %th source
+      %th done
       %th Edit
       %th Delete
 
+
   %tbody
     - @currentaffairs.each do |currentaffair|
-      %tr
-        %td= link_to currentaffair.name.to_date,currentaffair
-        %td= currentaffair.source
-        %td= link_to 'Edit', edit_currentaffair_path(currentaffair)
-        %td= link_to 'Destroy', currentaffair, method: :delete, data: { confirm: 'Are you sure?' }
+      - if currentaffair
+        %tr
+          %td= link_to currentaffair.name.strftime("%d-%m-%y"),currentaffair
+          %td= currentaffair.source
+          - if currentaffair.done
+            %td done
+          - else
+            %td= link_to 'Completed',donecurrentaffairs_path(currentaffair)
+          %td= link_to 'Edit', edit_currentaffair_path(currentaffair)
+          %td= link_to 'Destroy', currentaffair, method: :delete, data: { confirm: 'Are you sure?' }
+
 
 %br
 
