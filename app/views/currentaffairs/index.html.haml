@@ -1,31 +1,53 @@
-%h1 Listing currentaffairs
+.row
+  .col-md-9
+    .panel.panel-primary
+      .panel-heading
+        %h1 Listing currentaffairs
+      .panel-body  
 
-%table.table
-  %thead
-    %tr
-      %th Name
-      %th source
-      %th Todo
-      %th done
-      %th Edit
-      %th Delete
-
-
-  %tbody
-    - @currentaffairs.each do |currentaffair|
-      - if currentaffair
-        %tr
-          %td= link_to currentaffair.name.strftime("%d-%m-%y"),currentaffair
-          %td= currentaffair.source
-          %td= currentaffair.todo
-          - if currentaffair.done
-            %td done
-          - else
-            %td= link_to 'Completed',donecurrentaffairs_path(currentaffair)
-          %td= link_to 'Edit', edit_currentaffair_path(currentaffair)
-          %td= link_to 'Destroy', currentaffair, method: :delete, data: { confirm: 'Are you sure?' }
+        %table.table
+          %thead
+            %tr
+              %th Name
+              %th source
+              %th Todo
+              %th done
+              %th Edit
+              %th Delete
 
 
-%br
+          %tbody
+            - @currentaffairs.each do |currentaffair|
+              - if currentaffair
+                %tr
+                  %td= link_to currentaffair.name.strftime("%d-%m-%y"),currentaffair
+                  %td= currentaffair.source
+                  %td= currentaffair.todo
+                  - if currentaffair.done
+                    %td done
+                  - else
+                    %td= link_to 'Completed',donecurrentaffairs_path(currentaffair)
+                  %td= link_to 'Edit', edit_currentaffair_path(currentaffair)
+                  %td= link_to 'Destroy', currentaffair, method: :delete, data: { confirm: 'Are you sure?' }
 
 
+  
+  .col-md-3
+    
+      
+        
+    %button.btn.btn-primary.btn-md.btn-block{"data-target" => "#myModal", "data-toggle" => "modal", :type => "button"}
+      Add new current affair
+
+
+#myModal.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h4#myModalLabel.modal-title New current affair
+      .modal-body
+        = render 'currentaffairs/form'
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close

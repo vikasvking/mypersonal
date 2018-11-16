@@ -5,6 +5,7 @@ class CurrentaffairsController < ApplicationController
   # GET /currentaffairs.json
   def index
     @currentaffairs = Currentaffair.all
+    @currentaffair = Currentaffair.new
   end
 
   # GET /currentaffairs/1
@@ -34,7 +35,7 @@ class CurrentaffairsController < ApplicationController
 
     respond_to do |format|
       if @currentaffair.save
-        format.html { redirect_to @currentaffair, notice: 'Currentaffair was successfully created.' }
+        format.html { redirect_to  request.referrer, notice: 'Currentaffair was successfully created.' }
         format.json { render :show, status: :created, location: @currentaffair }
       else
         format.html { render :new }
