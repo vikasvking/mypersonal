@@ -15,6 +15,11 @@
       = f.label :name
     .col-sm-10
       = f.date_field(:name,order:[:day,:month,:year],class: 'form-control')
+  .form-group
+    .col-sm-2
+      = f.label :todo
+    .col-sm-10
+      = f.select(:todo,select_todo,{include_blank: true},class: 'form-control')  
 
   .form-group
     = f.submit 'Save',class: 'btn btn-primary'

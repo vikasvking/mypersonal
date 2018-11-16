@@ -19,7 +19,7 @@ class CurrentaffairsController < ApplicationController
 
   def donecurrent
     @currentaffair.update_attribute(:done,true)
-    redirect_to currentaffairs_path
+    redirect_to request.referrer
 
   end
 
@@ -75,6 +75,6 @@ class CurrentaffairsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def currentaffair_params
-      params.require(:currentaffair).permit(:name,:source,:done)
+      params.require(:currentaffair).permit(:name,:source,:done,:todo)
     end
 end

@@ -24,6 +24,20 @@
               - else
                 %td
                 %td= link_to 'delete',[@todo,i],method: :delete,data: {confirm: 'sure'}
+          - Currentaffair.all.each do |i|
+            %tr
+              - if i.todo==@todo.name
+                - if i.done==true
+                  %td
+                    %del= i.name.strftime("%d-%m-%y")
+                  %td
+                  %td= link_to "delete",i,method: :delete
+                - else
+                  %td= i.name.strftime("%d-%m-%y")
+                  %td= link_to "done",donecurrentaffairs_path(i)
+                  %td= link_to "delete",i,method: :delete
+
+
 
 
   .col-md-3

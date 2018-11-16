@@ -5,6 +5,7 @@
     %tr
       %th Name
       %th source
+      %th Todo
       %th done
       %th Edit
       %th Delete
@@ -16,6 +17,7 @@
         %tr
           %td= link_to currentaffair.name.strftime("%d-%m-%y"),currentaffair
           %td= currentaffair.source
+          %td= currentaffair.todo
           - if currentaffair.done
             %td done
           - else
