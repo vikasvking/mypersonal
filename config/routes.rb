@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
 
-  resources :pendings
   get 'home/index'
+
+  devise_for :users
+  
+  resources :pendings
+  
   resources :currentaffairs
   resources :todos do |i|
     resources :tasks
