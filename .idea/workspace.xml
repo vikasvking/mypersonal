@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a0f5cb9-d106-402d-9a5a-005c6d324871" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/mypersonal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mypersonal.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/currentaffairs_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/currentaffairs_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/currentaffairs_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/currentaffairs_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/todos_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/todos_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/currentaffairs/_form.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/currentaffairs/_form.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/currentaffairs/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/currentaffairs/index.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/home_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/home_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.haml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/todos/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/todos/index.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/todos/show.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/todos/show.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -35,14 +29,14 @@
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.30" value="2" />
+          <entry key="project.open.time.30" value="3" />
           <entry key="project.open.time.32" value="2" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.54" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -72,7 +66,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="erb" value="63" />
-          <entry key="haml" value="7213" />
+          <entry key="haml" value="7219" />
           <entry key="js" value="50" />
           <entry key="rb" value="2461" />
           <entry key="scss" value="505" />
@@ -80,7 +74,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Haml" value="7213" />
+          <entry key="Haml" value="7219" />
           <entry key="JavaScript" value="50" />
           <entry key="RHTML" value="63" />
           <entry key="Ruby" value="2461" />
@@ -91,20 +85,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/todos/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="47" column="183" selection-start-line="47" selection-start-column="183" selection-end-line="47" selection-end-column="183" />
+            <state relative-caret-position="225">
+              <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/currentaffairs_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -121,7 +115,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/todos/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
+            <state relative-caret-position="540">
               <caret line="36" column="63" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
             </state>
           </provider>
@@ -191,10 +185,10 @@
         <option value="$PROJECT_DIR$/app/views/currentaffairs/_form.html.haml" />
         <option value="$PROJECT_DIR$/app/views/currentaffairs/index.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/todos/index.html.haml" />
         <option value="$PROJECT_DIR$/app/helpers/todos_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/todos/show.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/currentaffairs_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/todos/index.html.haml" />
       </list>
     </option>
   </component>
@@ -224,6 +218,7 @@
     </navigator>
     <panes>
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -240,19 +235,19 @@
               <item name="mypersonal" type="b2602c69:ProjectViewProjectNode" />
               <item name="mypersonal" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mypersonal" type="b2602c69:ProjectViewProjectNode" />
               <item name="mypersonal" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="todos" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -402,17 +397,18 @@
       <workItem from="1541914578140" duration="4322000" />
       <workItem from="1541945919878" duration="4480000" />
       <workItem from="1542354800845" duration="2362000" />
+      <workItem from="1542463684970" duration="626000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44713000" />
+    <option name="totallyTimeSpent" value="45339000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1366" height="738" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3121212" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31742424" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -700,16 +696,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/todos/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="47" column="183" selection-start-line="47" selection-start-column="183" selection-end-line="47" selection-end-column="183" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/todos/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
+        <state relative-caret-position="540">
           <caret line="36" column="63" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
         </state>
       </provider>
@@ -717,7 +706,14 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/currentaffairs_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/todos/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
         </state>
       </provider>
     </entry>

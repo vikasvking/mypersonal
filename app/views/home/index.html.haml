@@ -39,9 +39,9 @@
             - Todo.all.each do |i|
               %b= i.name
               task has
-              %b= i.tasks.where(done: true).count
+              %b= i.tasks.where(done: true).count+taskcounter(i)[0]
               task done out of
-              %b= i.tasks.count
+              %b= i.tasks.count+taskcounter(i)[1]
 
       .panel-footer
         = link_to "New todo",new_todo_path,class: 'btn btn-info'
