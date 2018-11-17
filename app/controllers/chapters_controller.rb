@@ -26,6 +26,7 @@ class ChaptersController < ApplicationController
     @chapter=Chapter.find(params[:id])
     x=@chapter.revision+=1
     @chapter.update_attribute(:revision,x)
+    Taskrecord.create(date: Date.today.strftime("%d-%m-%y"))
     redirect_to Study.find(params[:study_id])
   end
   # POST /chapters

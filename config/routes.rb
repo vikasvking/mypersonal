@@ -18,6 +18,8 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
+  get 'createTaskrecord',action: :addTaskrecord,controller: 'taskrecords',as: 'createtaskrecord'
+
   get ':id',action: :donecurrent,controller: 'currentaffairs',as: 'donecurrentaffairs'
 
   get 'studies/:study_id/addRevision/:id',action: :addRevision,controller: 'chapters',as: 'addRevision'

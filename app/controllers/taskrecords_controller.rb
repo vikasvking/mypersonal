@@ -1,0 +1,3 @@
+class TaskrecordsController < ApplicationController
+
+end

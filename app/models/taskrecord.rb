@@ -1,0 +1,3 @@
+class Taskrecord < ApplicationRecord
+
+end

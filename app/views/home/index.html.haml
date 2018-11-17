@@ -43,6 +43,7 @@
               task done out of
               %b= i.tasks.count+taskcounter(i)[1]
               %br
+      = column_chart Taskrecord.all.group(:date).count
 
       .panel-footer
         = link_to "New todo",new_todo_path,class: 'btn btn-info'
