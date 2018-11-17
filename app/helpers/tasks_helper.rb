@@ -1,6 +1,6 @@
 module TasksHelper
   def sub
-    return ["History","Geography","Political Science","Economics","Mechanical"]
+    return ["History","Geography","Political Science","Economics","Mechanical","Aptitude"]
   end
 
   def history_select
@@ -53,6 +53,17 @@ module TasksHelper
     Study.where(subject: 'Economics').each do |i|
       i.chapters.each do |j|
         str=j.name+'.'+i.book+'.'+'Economics'
+        arr<<str
+      end
+    end
+    return arr
+  end
+
+  def apti
+    arr=[]
+    Study.where(subject: 'Aptitude').each do |i|
+      i.chapters.each do |j|
+        str=j.name+'.'+i.book+'.'+'Aptitude'
         arr<<str
       end
     end

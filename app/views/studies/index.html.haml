@@ -81,6 +81,21 @@
               %td= link_to i.book,i
               %td= link_to "Edit",edit_study_path(i)
               %td= link_to "delete",i,method: :delete
+    .panel.panel-primary
+      .panel-heading
+        %h2 Aptitude
+      .panel-body
+        %table.table
+          %tr
+            %th Book
+            %th Edit
+            %th Delete
+
+          - @apti.each do |i|
+            %tr
+              %td= link_to i.book,i
+              %td= link_to "Edit",edit_study_path(i)
+              %td= link_to "delete",i,method: :delete
   .col-md-3
     = link_to 'New Study', new_study_path,class: 'btn btn-primary'
 

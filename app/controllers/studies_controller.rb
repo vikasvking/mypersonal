@@ -10,6 +10,7 @@ class StudiesController < ApplicationController
     @pol=Study.where(subject: 'Political Science')
     @eco=Study.where(subject: 'Economics')
     @mec=Study.where(subject: 'Mechanical')
+    @apti=Study.where(subject: 'Aptitude')
   end
 
   # GET /studies/1
