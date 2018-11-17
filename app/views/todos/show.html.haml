@@ -57,6 +57,9 @@
     .row
       %button.btn.btn-primary.btn-md.btn-block{"data-target" => "#myModal5", "data-toggle" => "modal", :type => "button"}
         Mechanical
+    .row
+      %button.btn.btn-primary.btn-md.btn-block{"data-target" => "#myModal6", "data-toggle" => "modal", :type => "button"}
+        Aptitude
 
 / Modal
 #myModal.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
@@ -119,6 +122,18 @@
         %h4#myModalLabel5.modal-title Mechanical
       .modal-body
         = render 'tasks/form_mech'
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+
+#myModal6.modal.fade{"aria-labelledby" => "myModalLabel2", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h4#myModalLabel6.modal-title Aptitude
+      .modal-body
+        = render 'tasks/form_apti'
       .modal-footer
         %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
 

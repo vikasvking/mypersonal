@@ -1,0 +1,6 @@
+= form_for ([@todo,@todo.tasks.build]) do |f|
+  .form-group
+    = f.label :name
+    = f.select(:name,apti,{include_blank: true},{class: 'form-control'})
+  .actions
+    = f.submit 'Save',class: 'btn btn-primary'
