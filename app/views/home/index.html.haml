@@ -47,7 +47,7 @@
               task done out of
               %b= i.tasks.count+taskcounter(i)[1]
               %br
-        = column_chart Taskrecord.all.group(:date).count
+        = column_chart Taskrecord.all.group(:date).count,colors: ["#fff","#fff"]
 
       .panel-footer
 

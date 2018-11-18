@@ -4,7 +4,7 @@ class CurrentaffairsController < ApplicationController
   # GET /currentaffairs
   # GET /currentaffairs.json
   def index
-    @currentaffairs = Currentaffair.all
+    @currentaffairs = Currentaffair.all.order(name: 'ASC')
     @currentaffair = Currentaffair.new
   end
 
