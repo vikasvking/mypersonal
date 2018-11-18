@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a0f5cb9-d106-402d-9a5a-005c6d324871" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/mypersonal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mypersonal.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/chapters/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/chapters/index.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/chapters/show.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/chapters/show.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/currentaffairs/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/currentaffairs/index.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/currentaffairs/show.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/currentaffairs/show.html.haml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/home/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/partials/_nav.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/partials/_nav.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/pendings/show.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pendings/show.html.haml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/studies/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/studies/index.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/studies/show.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/studies/show.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tasks/show.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tasks/show.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/todos/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/todos/index.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/todos/new.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/todos/new.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/todos/show.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/todos/show.html.haml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -83,19 +68,19 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="erb" value="63" />
-          <entry key="haml" value="8176" />
+          <entry key="haml" value="8285" />
           <entry key="js" value="51" />
           <entry key="rb" value="2811" />
-          <entry key="scss" value="1052" />
+          <entry key="scss" value="1100" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Haml" value="8176" />
+          <entry key="Haml" value="8285" />
           <entry key="JavaScript" value="51" />
           <entry key="RHTML" value="63" />
           <entry key="Ruby" value="2811" />
-          <entry key="SCSS" value="1052" />
+          <entry key="SCSS" value="1100" />
         </counts>
       </usages-collector>
     </session>
@@ -108,17 +93,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/currentaffairs/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+            <state relative-caret-position="120">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+            <state relative-caret-position="225">
+              <caret line="102" column="23" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -126,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+            <state relative-caret-position="60">
+              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -141,11 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/todos/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="24" selection-start-line="18" selection-start-column="19" selection-end-line="19" selection-end-column="24" />
+            <state relative-caret-position="260">
+              <caret line="63" column="59" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -163,8 +148,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/todos/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -172,8 +157,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/studies/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="152" column="24" selection-start-line="152" selection-start-column="24" selection-end-line="152" selection-end-column="24" />
+            <state relative-caret-position="244">
+              <caret line="133" column="28" selection-start-line="133" selection-start-column="28" selection-end-line="133" selection-end-column="28" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#1;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -260,12 +248,12 @@
         <option value="$PROJECT_DIR$/app/views/todos/new.html.haml" />
         <option value="$PROJECT_DIR$/app/views/partials/_nav.html.haml" />
         <option value="$PROJECT_DIR$/app/views/currentaffairs/index.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/home/index.html.haml" />
         <option value="$PROJECT_DIR$/app/views/todos/show.html.haml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/studies/index.html.haml" />
         <option value="$PROJECT_DIR$/app/views/studies/show.html.haml" />
         <option value="$PROJECT_DIR$/app/views/todos/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/home/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/studies/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
       </list>
     </option>
   </component>
@@ -333,7 +321,7 @@
               <item name="mypersonal" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="todos" type="462c0819:PsiDirectoryNode" />
+              <item name="studies" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -494,7 +482,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59865000" />
+    <option name="totallyTimeSpent" value="61026000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1366" height="738" extended-state="6" />
@@ -771,8 +759,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/currentaffairs/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        <state relative-caret-position="120">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -788,34 +776,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/todos/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/todos/edit.html.haml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/studies/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="152" column="24" selection-start-line="152" selection-start-column="24" selection-end-line="152" selection-end-column="24" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/studies/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
@@ -826,8 +793,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/todos/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="24" selection-start-line="18" selection-start-column="19" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="260">
+          <caret line="63" column="59" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/studies/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="133" column="28" selection-start-line="133" selection-start-column="28" selection-end-line="133" selection-end-column="28" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#1;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="102" column="23" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
         </state>
       </provider>
     </entry>

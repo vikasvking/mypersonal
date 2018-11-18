@@ -2,155 +2,161 @@
   .alert.alert-info= notice
 .row
   .col-md-9
-    .panel.panel-primary
-      .panel-heading
-        %h2 History
-      .panel-body
-        %table.table
-          %tr
-            %th Book
-            %th Edit
-            %th Delete
+    .row
+      .col-md-4
+        .panel.panel-primary
+          .panel-heading
+            %h2 History
+          .panel-body
+            %table.table
+              %tr
+                %th Book
+                %th Edit
+                %th Delete
 
-          - @his.each do |i|
-            %tr
-              %td
-                = link_to i ,class: 'no-style' do
-                  %span.glyphicon.glyphicon-book
-                  = i.book
-              %td
-                = link_to edit_study_path(i) ,class: 'btn btn-info' do
-                  %span.glyphicon.glyphicon-wrench
-                  Edit
-              %td
-                = link_to i,method: :delete ,class: 'btn btn-danger' do
-                  %span.glyphicon.glyphicon-remove
-                  Delete
-
-
-
-    .panel.panel-primary
-      .panel-heading
-        %h2 Geography
-      .panel-body
-        %table.table
-          %tr
-            %th Book
-            %th Edit
-            %th Delete
-
-          - @geo.each do |i|
-            %tr
-              %td
-                = link_to i ,class: 'no-style' do
-                  %span.glyphicon.glyphicon-book
-                  = i.book
-              %td
-                = link_to edit_study_path(i) ,class: 'btn btn-info' do
-                  %span.glyphicon.glyphicon-wrench
-                  Edit
-              %td
-                = link_to i,method: :delete ,class: 'btn btn-danger' do
-                  %span.glyphicon.glyphicon-remove
-                  Delete
+              - @his.each do |i|
+                %tr
+                  %td
+                    = link_to i ,class: 'no-style' do
+                      %span.glyphicon.glyphicon-book
+                      = i.book
+                  %td
+                    = link_to edit_study_path(i) ,class: 'btn btn-info' do
+                      %span.glyphicon.glyphicon-wrench
+                      Edit
+                  %td
+                    = link_to i,method: :delete ,class: 'btn btn-danger' do
+                      %span.glyphicon.glyphicon-remove
+                      Delete
 
 
-    .panel.panel-primary
-      .panel-heading
-        %h2 Economics
-      .panel-body
-        %table.table
-          %tr
-            %th Book
-            %th Edit
-            %th Delete
+      .col-md-4
+        .panel.panel-primary
+          .panel-heading
+            %h2 Geography
+          .panel-body
+            %table.table
+              %tr
+                %th Book
+                %th Edit
+                %th Delete
 
-          - @eco.each do |i|
-            %tr
-              %td
-                = link_to i ,class: 'no-style' do
-                  %span.glyphicon.glyphicon-book
-                  = i.book
-              %td
-                = link_to edit_study_path(i) ,class: 'btn btn-info' do
-                  %span.glyphicon.glyphicon-wrench
-                  Edit
-              %td
-                = link_to i,method: :delete ,class: 'btn btn-danger' do
-                  %span.glyphicon.glyphicon-remove
-                  Delete
-    .panel.panel-primary
-      .panel-heading
-        %h2 Political science
-      .panel-body
-        %table.table
-          %tr
-            %th Book
-            %th Edit
-            %th Delete
+              - @geo.each do |i|
+                %tr
+                  %td
+                    = link_to i ,class: 'no-style' do
+                      %span.glyphicon.glyphicon-book
+                      = i.book
+                  %td
+                    = link_to edit_study_path(i) ,class: 'btn btn-info' do
+                      %span.glyphicon.glyphicon-wrench
+                      Edit
+                  %td
+                    = link_to i,method: :delete ,class: 'btn btn-danger' do
+                      %span.glyphicon.glyphicon-remove
+                      Delete
 
-          - @pol.each do |i|
-            %tr
-              %td
-                = link_to i ,class: 'no-style' do
-                  %span.glyphicon.glyphicon-book
-                  = i.book
-              %td
-                = link_to edit_study_path(i) ,class: 'btn btn-info' do
-                  %span.glyphicon.glyphicon-wrench
-                  Edit
-              %td
-                = link_to i,method: :delete ,class: 'btn btn-danger' do
-                  %span.glyphicon.glyphicon-remove
-                  Delete
-    .panel.panel-primary
-      .panel-heading
-        %h2 Mechanical
-      .panel-body
-        %table.table
-          %tr
-            %th Book
-            %th Edit
-            %th Delete
+      .col-md-4
+        .panel.panel-primary
+          .panel-heading
+            %h2 Economics
+          .panel-body
+            %table.table
+              %tr
+                %th Book
+                %th Edit
+                %th Delete
 
-          - @mec.each do |i|
-            %tr
-              %td
-                = link_to i ,class: 'no-style' do
-                  %span.glyphicon.glyphicon-book
-                  = i.book
-              %td
-                = link_to edit_study_path(i) ,class: 'btn btn-info' do
-                  %span.glyphicon.glyphicon-wrench
-                  Edit
-              %td
-                = link_to i,method: :delete ,class: 'btn btn-danger' do
-                  %span.glyphicon.glyphicon-remove
-                  Delete
-    .panel.panel-primary
-      .panel-heading
-        %h2 Aptitude
-      .panel-body
-        %table.table
-          %tr
-            %th Book
-            %th Edit
-            %th Delete
+              - @eco.each do |i|
+                %tr
+                  %td
+                    = link_to i ,class: 'no-style' do
+                      %span.glyphicon.glyphicon-book
+                      = i.book
+                  %td
+                    = link_to edit_study_path(i) ,class: 'btn btn-info' do
+                      %span.glyphicon.glyphicon-wrench
+                      Edit
+                  %td
+                    = link_to i,method: :delete ,class: 'btn btn-danger' do
+                      %span.glyphicon.glyphicon-remove
+                      Delete
+    .row
+      .col-md-4
+        .panel.panel-primary
+          .panel-heading
+            %h2 Political science
+          .panel-body
+            %table.table
+              %tr
+                %th Book
+                %th Edit
+                %th Delete
 
-          - @apti.each do |i|
-            %tr
-              %td
-                = link_to i ,class: 'no-style' do
-                  %span.glyphicon.glyphicon-book
-                  = i.book
-              %td
-                = link_to edit_study_path(i) ,class: 'btn btn-info' do
-                  %span.glyphicon.glyphicon-wrench
-                  Edit
-              %td
-                = link_to i,method: :delete ,class: 'btn btn-danger' do
-                  %span.glyphicon.glyphicon-remove
-                  Delete
+              - @pol.each do |i|
+                %tr
+                  %td
+                    = link_to i ,class: 'no-style' do
+                      %span.glyphicon.glyphicon-book
+                      = i.book
+                  %td
+                    = link_to edit_study_path(i) ,class: 'btn btn-info' do
+                      %span.glyphicon.glyphicon-wrench
+                      Edit
+                  %td
+                    = link_to i,method: :delete ,class: 'btn btn-danger' do
+                      %span.glyphicon.glyphicon-remove
+                      Delete
+      .col-md-4
+        .panel.panel-primary
+          .panel-heading
+            %h2 Mechanical
+          .panel-body
+            %table.table
+              %tr
+                %th Book
+                %th Edit
+                %th Delete
+
+              - @mec.each do |i|
+                %tr
+                  %td
+                    = link_to i ,class: 'no-style' do
+                      %span.glyphicon.glyphicon-book
+                      = i.book
+                  %td
+                    = link_to edit_study_path(i) ,class: 'btn btn-info' do
+                      %span.glyphicon.glyphicon-wrench
+                      Edit
+                  %td
+                    = link_to i,method: :delete ,class: 'btn btn-danger' do
+                      %span.glyphicon.glyphicon-remove
+                      Delete
+      .col-md-4
+        .panel.panel-primary
+          .panel-heading
+            %h2 Aptitude
+          .panel-body
+            %table.table
+              %tr
+                %th Book
+                %th Edit
+                %th Delete
+
+              - @apti.each do |i|
+                %tr
+                  %td
+                    = link_to i ,class: 'no-style' do
+                      %span.glyphicon.glyphicon-book
+                      = i.book
+                  %td
+                    = link_to edit_study_path(i) ,class: 'btn btn-info' do
+                      %span.glyphicon.glyphicon-wrench
+                      Edit
+                  %td
+                    = link_to i,method: :delete ,class: 'btn btn-danger' do
+                      %span.glyphicon.glyphicon-remove
+                      Delete
   .col-md-3
     = link_to new_study_path,class: 'btn btn-primary' do
       %span.glyphicon.glyphicon-plus-sign
