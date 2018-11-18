@@ -26,9 +26,9 @@
                   - if currentaffair.done
                     %td done
                   - else
-                    %td= link_to 'Completed',donecurrentaffairs_path(currentaffair)
-                  %td= link_to 'Edit', edit_currentaffair_path(currentaffair)
-                  %td= link_to 'Destroy', currentaffair, method: :delete, data: { confirm: 'Are you sure?' }
+                    %td= link_to 'Completed',donecurrentaffairs_path(currentaffair),class: 'btn btn-info'
+                  %td= link_to 'Edit', edit_currentaffair_path(currentaffair),class: 'btn btn-info'
+                  %td= link_to 'Destroy', currentaffair, method: :delete, data: { confirm: 'Are you sure?' },class: 'btn btn-info'
 
 
   

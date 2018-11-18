@@ -20,6 +20,7 @@ class CurrentaffairsController < ApplicationController
 
   def donecurrent
     @currentaffair.update_attribute(:done,true)
+    Taskrecord.create(date: Date.today.strftime("%d-%m-%y"))
     redirect_to request.referrer
 
   end
