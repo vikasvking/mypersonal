@@ -7,21 +7,32 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      = link_to 'Home',root_path,class: 'navbar-brand'
+      = link_to  root_path,class: 'navbar-brand' do
+        %span.glyphicon.glyphicon-home
+        Home
     / Collect the nav links, forms, and other content for toggling
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       %ul.nav.navbar-nav
         %li
-          = link_to "Todo",todos_path,class: 'no-style'
+          = link_to todos_path,class: 'no-style' do
+            %span.glyphicon.glyphicon-th-list
+            Todo
 
         %li
-          = link_to "Current Affairs",currentaffairs_path
+          = link_to currentaffairs_path do
+            %span.glyphicon.glyphicon-info-sign
+            Current Affairs
         %li
-          = link_to "Subject",studies_path
+          = link_to studies_path do
+            %span.glyphicon.glyphicon-book
+            Subject
         %li
-          = link_to "Pending Work",pendings_path
+          = link_to pendings_path do
+            %span.glyphicon.glyphicon-tags
+            Pending work
         %li.dropdown
           %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+            %span.glyphicon.glyphicon-plus-sign
             Add
             %span.caret
           %ul.dropdown-menu

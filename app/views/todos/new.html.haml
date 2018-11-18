@@ -6,4 +6,6 @@
       .panel-body
         = render 'form'
       .panel-footer
-        = link_to 'Back', todos_path,class: 'btn btn-primary'
+        = link_to todos_path,class: 'btn btn-primary' do
+          %span.glyphicon.glyphicon-arrow-left
+          back

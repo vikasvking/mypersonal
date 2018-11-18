@@ -16,12 +16,20 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
-$dark: #455A64;
-$light: #607D8B;
-$few: #FDD835;
+
+
+$back: #2d2838;
+$few: #802bb1;
+$dark: #4c495d;
+$light:#564f6f;
+$text:#d1d7e0;
 body{
   font-family: 'Titillium Web', sans-serif !important;
+  background: url("bac.jpg");
+  background-attachment: fixed;
 
+
+  color: $text;
 
 }
 .navbar{
@@ -29,19 +37,32 @@ body{
   border: none;
   background-color: $dark;
   padding-top: 10px;
-  color: #fff  !important;
+  color: $light  !important;
+  font-size: larger;
   padding-bottom: 10px;
 
+}
+li{
+  color: $light  !important;
 }
 .nav.navbar.navbar-inverse li {
   color: #fff;
 }
 .no-style{
   text-decoration: none !important;
+  color: whitesmoke;
   cursor: auto;
 }
 .btn-block{
   margin: 10px;
+}
+
+
+h1,h2,h3,h4,h5{
+
+  font-size: 34px;
+  font-weight: bolder;
+
 }
 
 .panel{
@@ -51,13 +72,17 @@ body{
     background-color: $dark;
     border-radius: 0px !important;
     box-shadow: none;
+    border: none;
   }
   .panel-body{
 
     border-radius: 0px !important;
     border: none;
+    background-color: $light;
     box-shadow: none;
-    text-align: center;
+    overflow-y: auto;
+    height: 100vm;
+    text-align: justify;
     text-wrap: normal;
 
     margin: 0px;
@@ -65,13 +90,36 @@ body{
   .panel-footer{
 
     border-radius: 0px !important;
+    background-color: $light;
     box-shadow: none;
     margin: 0px;
+    border: none;
   }
 }
 .btn{
   border-radius: 0px !important;
   background-color: $few;
+  padding: 10px;
   border: none;
-  color: #222;
+  color: $text !important;
+
+}
+.modal-header,.modal-body,.modal-footer{
+  background-color: $light;
+}
+.form-control{
+  background-color: $back;
+  border: none !important;
+  color: whitesmoke;
+}
+
+th{
+  font-size: 20px;
+  border: none;
+}
+
+
+td{
+  font-size: large;
+  border: none !important;
 }

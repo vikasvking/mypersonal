@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a0f5cb9-d106-402d-9a5a-005c6d324871" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/mypersonal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mypersonal.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/currentaffairs_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/currentaffairs_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/chapters/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/chapters/index.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/chapters/show.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/chapters/show.html.haml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/currentaffairs/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/currentaffairs/index.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/currentaffairs/show.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/currentaffairs/show.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/partials/_nav.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/partials/_nav.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/pendings/show.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pendings/show.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/studies/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/studies/index.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/studies/show.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/studies/show.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tasks/show.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tasks/show.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/todos/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/todos/index.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/todos/new.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/todos/new.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/todos/show.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/todos/show.html.haml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -44,12 +59,12 @@
           <entry key="Gemfile" value="2" />
           <entry key="css" value="1" />
           <entry key="erb" value="1" />
-          <entry key="haml" value="78" />
+          <entry key="haml" value="88" />
           <entry key="html" value="1" />
-          <entry key="jbuilder" value="1" />
+          <entry key="jbuilder" value="2" />
           <entry key="js" value="3" />
           <entry key="rb" value="52" />
-          <entry key="scss" value="5" />
+          <entry key="scss" value="6" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
@@ -57,30 +72,30 @@
         <counts>
           <entry key="CSS" value="1" />
           <entry key="HTML" value="1" />
-          <entry key="Haml" value="78" />
+          <entry key="Haml" value="88" />
           <entry key="JavaScript" value="3" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RHTML" value="1" />
-          <entry key="Ruby" value="55" />
-          <entry key="SCSS" value="5" />
+          <entry key="Ruby" value="56" />
+          <entry key="SCSS" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="erb" value="63" />
-          <entry key="haml" value="7348" />
+          <entry key="haml" value="8176" />
           <entry key="js" value="51" />
           <entry key="rb" value="2811" />
-          <entry key="scss" value="505" />
+          <entry key="scss" value="1052" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Haml" value="7348" />
+          <entry key="Haml" value="8176" />
           <entry key="JavaScript" value="51" />
           <entry key="RHTML" value="63" />
           <entry key="Ruby" value="2811" />
-          <entry key="SCSS" value="505" />
+          <entry key="SCSS" value="1052" />
         </counts>
       </usages-collector>
     </session>
@@ -90,11 +105,84 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/currentaffairs/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="22" column="84" lean-forward="true" selection-start-line="22" selection-start-column="84" selection-end-line="22" selection-end-column="84" />
+            <state relative-caret-position="75">
+              <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/todos/_form.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/todos/index.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="24" selection-start-line="18" selection-start-column="19" selection-end-line="19" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/todos/edit.html.haml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/todos/_todo.json.jbuilder">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/todos/show.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/studies/index.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="152" column="24" selection-start-line="152" selection-start-column="24" selection-end-line="152" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/studies/show.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -116,6 +204,7 @@
       <find>#notice</find>
       <find>%p.notice</find>
       <find>.notice</find>
+      <find>.alert.alert-info</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -123,6 +212,7 @@
       <replace>name</replace>
       <replace>.notice</replace>
       <replace>.alert.alert-info</replace>
+      <replace>.alert.alert-info= notice if notice</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -143,10 +233,7 @@
         <option value="$PROJECT_DIR$/app/controllers/todos_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/tasks/index.html.haml" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/todos/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/todos/new.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/partials/_nav.html.haml" />
         <option value="$PROJECT_DIR$/app/views/tasks/_form_mech.html.html" />
         <option value="$PROJECT_DIR$/app/views/tasks/_form_poi.html.haml" />
         <option value="$PROJECT_DIR$/app/views/tasks/_form_eco.html.haml" />
@@ -157,25 +244,28 @@
         <option value="$PROJECT_DIR$/app/views/studies/new.html.haml" />
         <option value="$PROJECT_DIR$/app/views/currentaffairs/new.html.haml" />
         <option value="$PROJECT_DIR$/app/views/currentaffairs/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
         <option value="$PROJECT_DIR$/app/helpers/todos_helper.rb" />
         <option value="$PROJECT_DIR$/app/helpers/tasks_helper.rb" />
         <option value="$PROJECT_DIR$/app/controllers/studies_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/studies/index.html.haml" />
         <option value="$PROJECT_DIR$/app/views/tasks/_form_apti.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/todos/index.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/todos/show.html.haml" />
         <option value="$PROJECT_DIR$/app/models/taskrecord.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/chapters_controller.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/views/studies/show.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/taskrecords_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/tasks_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/home/index.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/currentaffairs_controller.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/todos/_form.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/todos/new.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/partials/_nav.html.haml" />
         <option value="$PROJECT_DIR$/app/views/currentaffairs/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/home/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/todos/show.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/studies/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/studies/show.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/todos/index.html.haml" />
       </list>
     </option>
   </component>
@@ -191,10 +281,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="259" />
-    <option name="y" value="339" />
-    <option name="width" value="928" />
-    <option name="height" value="726" />
+    <option name="x" value="683" />
+    <option name="y" value="30" />
+    <option name="width" value="683" />
+    <option name="height" value="369" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -229,7 +319,21 @@
               <item name="mypersonal" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="currentaffairs" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mypersonal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mypersonal" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="partials" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mypersonal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mypersonal" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="todos" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -390,13 +494,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51797000" />
+    <option name="totallyTimeSpent" value="59865000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1366" height="738" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49754903" visible="true" weight="0.32272726" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49754903" visible="true" weight="0.14393939" />
       <window_info id="Structure" order="1" sideWeight="0.502451" side_tool="true" weight="0.31742424" />
       <window_info id="Favorites" order="2" sideWeight="0.502451" side_tool="true" weight="0.31742424" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -409,7 +513,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31578946" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31578946" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -424,20 +528,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181102113136_create_chapters.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/studies/create.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/chapters/edit.html.haml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -452,13 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -483,13 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/_nav.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -546,13 +622,6 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20181103070022_create_currentaffairs.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/chapters/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -591,20 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/studies/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="93" column="17" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/todos/_form.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="45" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tasks/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -634,20 +689,6 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20181116073209_add_todo_to_currentaffairs.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/todos/show.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/todos/new.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/studies_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1170">
@@ -655,45 +696,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/todos/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/taskrecords_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/studies/show.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="51" selection-start-column="47" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -728,10 +734,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/currentaffairs/index.html.haml">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="22" column="84" lean-forward="true" selection-start-line="22" selection-start-column="84" selection-end-line="22" selection-end-column="84" />
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/todos/new.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="14" selection-start-line="9" selection-start-column="9" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/_nav.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/currentaffairs/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/todos/_todo.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/todos/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/todos/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/todos/edit.html.haml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/studies/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="152" column="24" selection-start-line="152" selection-start-column="24" selection-end-line="152" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/studies/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/todos/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="24" selection-start-line="18" selection-start-column="19" selection-end-line="19" selection-end-column="24" />
         </state>
       </provider>
     </entry>

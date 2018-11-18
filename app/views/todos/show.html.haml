@@ -1,41 +1,57 @@
-.alert.alert-info= notice
+- if notice
+  .alert.alert-info= notice
 
 .row
   .col-md-9
     .panel.panel-primary
       .panel-heading
-        %h3= @todo.name
+        %h3
+          %span.glyphicon.glyphicon-paperclip
+
+          = @todo.name
       .panel-body
         %table.table
           %tr
-            %td Name
-            %td action
-            %td action
+            %th Name
+            %th action
+            %th action
           - @todo.tasks.each do |i|
             %tr
               %td
+
                 - if i.done==true
+                  .span.glyphicon.glyphicon-ok
                   %del= i.name
                 - else
+                  %span.glyphicon.glyphicon-minus
                   = i.name
               - if i.done!=true
-                %td= link_to "Done",done_path(@todo,i)
-                %td= link_to 'delete',[@todo,i],method: :delete,data: {confirm: 'sure'}
+                %td
+                  = link_to done_path(@todo,i),class: 'btn btn-info' do
+                    %span.glyphicon.glyphicon-thumbs-up
+                    Done
+                %td= link_to 'delete',[@todo,i],method: :delete,data: {confirm: 'sure'},class: 'btn btn-danger'
               - else
                 %td
-                %td= link_to 'delete',[@todo,i],method: :delete,data: {confirm: 'sure'}
+                %td= link_to 'delete',[@todo,i],method: :delete,data: {confirm: 'sure'},class: 'btn btn-danger'
           - Currentaffair.all.each do |i|
             %tr
               - if i.todo==@todo.name
                 - if i.done==true
                   %td
+                    %span.glyphicon.glyphicon-ok
                     %del= i.name.strftime("%d-%m-%y")
                   %td
-                  %td= link_to "delete",i,method: :delete
+                  %td= link_to "delete",i,method: :delete,class: 'btn btn-danger'
                 - else
-                  %td= i.name.strftime("%d-%m-%y")
-                  %td= link_to "done",donecurrentaffairs_path(i)
-                  %td= link_to "delete",i,method: :delete
+                  %td
+                    %span.glyphicon.glyphicon-minus
+                    = i.name.strftime("%d-%m-%y")
+                  %td
+                    = link_to donecurrentaffairs_path(i) ,class: 'btn btn-info' do
+                      %span.glyphicon.glyphicon-thumbs-up
+                      Done
+                  %td= link_to "delete",i,method: :delete,class: 'btn btn-danger'
 
 
 

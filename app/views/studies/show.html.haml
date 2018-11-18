@@ -2,8 +2,11 @@
   .col-md-9
     .panel.panel-primary
       .panel-heading
-        = @study.subject
-        = @study.book
+        %h2
+          %span.glyphicon.glyphicon-book
+          = @study.subject
+          = @study.book
+          = link_to 'Edit', edit_study_path(@study),class: 'btn btn-primary'
       .panel-body
         %table.table
           %tr
@@ -17,12 +20,14 @@
             %tr
               %td= i.name
               %td= i.revision
-              %td= link_to 'Add revision',addRevision_path(@study,i),data: {confirm: 'add revision'}
+              %td
+                = link_to addRevision_path(@study,i),data: {confirm: 'add revision'} ,class: 'btn btn-info' do
+                  %span.glyphicon.glyphicon-plus
+                  Add revision
+
 
 
   .col-md-3
-    = link_to 'Edit', edit_study_path(@study),class: 'btn btn-primary'
-    %br
     = render 'chapters/form'
 
 
