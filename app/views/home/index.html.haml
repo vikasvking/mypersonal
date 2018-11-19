@@ -70,8 +70,9 @@
             pending work
         %p
           %h3
-            %span.glyphicon.glyphicon-triangle-right
+
             - Todo.all.each do |i|
+              %span.glyphicon.glyphicon-triangle-right
               %b= i.name
               task has
               %b= i.tasks.where(done: true).count+taskcounter(i)[0]
