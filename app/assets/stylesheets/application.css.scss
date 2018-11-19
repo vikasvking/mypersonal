@@ -63,7 +63,7 @@ h1,h2,h3,h4,h5{
 
 
   font-weight: bolder;
-  font-family: 'Sedgwick Ave', cursive;
+
 
 }
 
@@ -78,13 +78,14 @@ h1,h2,h3,h4,h5{
     border: none;
   }
   .panel-body{
-
     border-radius: 0px !important;
     border: none;
-    background-color: $light;
+    background-color: $dark;
     box-shadow: none;
     overflow-y: auto;
+    align-content: center;
     height: 100vm;
+    overflow-x: auto;
     text-align: justify;
     text-wrap: normal;
 
@@ -120,18 +121,15 @@ h1,h2,h3,h4,h5{
   color: whitesmoke;
 }
 
-th{
+th,td{
   font-size: 20px;
-  border: none;
+  border: none !important;
 }
 
 
 td{
   font-size: large;
   border: none !important;
-  font-family: 'Sedgwick Ave', cursive;
+
 }
 
-p{
-  font-family: 'Sedgwick Ave', cursive !important;
-}

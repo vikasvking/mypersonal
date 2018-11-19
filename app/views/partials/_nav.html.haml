@@ -30,19 +30,19 @@
           = link_to pendings_path do
             %span.glyphicon.glyphicon-tags
             Pending work
-        %li.dropdown
-          %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+        %li
+          = link_to new_todo_path do
             %span.glyphicon.glyphicon-plus-sign
-            Add
-            %span.caret
-          %ul.dropdown-menu
-            %li
-              =link_to "New Todo",new_todo_path
-            %li
-              = link_to "New current Affair task",new_currentaffair_path
+            New Todo
+        %li
+          = link_to new_study_path do
+            %span.glyphicon.glyphicon-plus-sign
+            New Book
+        %li
+          = link_to new_currentaffair_path do
+            %span.glyphicon.glyphicon-plus-sign
+            New Current Affairs
 
-            %li
-              = link_to "New Subject",new_study_path
 
       %form.navbar-form.navbar-left
 

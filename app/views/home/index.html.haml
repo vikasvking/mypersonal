@@ -1,12 +1,43 @@
-.row
-  .col-md-9
-    .panel.panel-primary
-      .panel-heading
-        %h1
-          Welcome Vikas
-          Today is
-          = Time.now.strftime('%A')
-      .panel-body
+.row.intro
+
+  %b N
+  othing is important
+  %br
+  than believing in
+
+  %b youself
+
+  %br
+
+  #intro-small
+    %b
+      Work hard
+    and
+    %button.btn.btn-primary.btn-sm.btn-intro{"data-target" => "#myModal", "data-toggle" => "modal", :type => "button"}
+      %b
+        show
+
+    everyone what you are
+    %br
+    made of and dont let anyone come in your way.
+    %br
+
+  Let the
+  %button.btn.btn-primary.btn-sm.btn-intro{"data-target" => "#myModal2", "data-toggle" => "modal", :type => "button"}
+    Graph
+  speek.
+
+
+
+
+#myModal.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h4#myModalLabel.modal-title Data
+      .modal-body
         %p
           %h3
             %span.glyphicon.glyphicon-triangle-right
@@ -47,18 +78,16 @@
               task done out of
               %b= i.tasks.count+taskcounter(i)[1]
               %br
-        = column_chart Taskrecord.all.group(:date).count,colors: ["#fff","#fff"]
-
-      .panel-footer
-
-        = link_to new_todo_path,class: 'btn btn-info' do
-          %span.glyphicon.glyphicon-plus-sign
-          New Todo
-        = link_to new_study_path,class: 'btn btn-info' do
-          %span.glyphicon.glyphicon-plus-sign
-          New Book
-        = link_to new_currentaffair_path,class: 'btn btn-info' do
-          %span.glyphicon.glyphicon-plus-sign
-          New Current Affairs
-
-  .col-md-3
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+#myModal2.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h4#myModalLabel2.modal-title Graph
+      .modal-body.modal-graph
+        = column_chart Taskrecord.all.group(:date).count
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close

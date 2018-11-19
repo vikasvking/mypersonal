@@ -8,26 +8,8 @@
           .panel-heading
             %h2 History
           .panel-body
-            %table.table
-              %tr
-                %th Book
-                %th Edit
-                %th Delete
-
-              - @his.each do |i|
-                %tr
-                  %td
-                    = link_to i ,class: 'no-style' do
-                      %span.glyphicon.glyphicon-book
-                      = i.book
-                  %td
-                    = link_to edit_study_path(i) ,class: 'btn btn-info' do
-                      %span.glyphicon.glyphicon-wrench
-                      Edit
-                  %td
-                    = link_to i,method: :delete ,class: 'btn btn-danger' do
-                      %span.glyphicon.glyphicon-remove
-                      Delete
+            %button.btn.btn-primary.btn-sm.btn-block{"data-target" => "#myModal", "data-toggle" => "modal", :type => "button"}
+              show
 
 
       .col-md-4
@@ -35,132 +17,222 @@
           .panel-heading
             %h2 Geography
           .panel-body
-            %table.table
-              %tr
-                %th Book
-                %th Edit
-                %th Delete
-
-              - @geo.each do |i|
-                %tr
-                  %td
-                    = link_to i ,class: 'no-style' do
-                      %span.glyphicon.glyphicon-book
-                      = i.book
-                  %td
-                    = link_to edit_study_path(i) ,class: 'btn btn-info' do
-                      %span.glyphicon.glyphicon-wrench
-                      Edit
-                  %td
-                    = link_to i,method: :delete ,class: 'btn btn-danger' do
-                      %span.glyphicon.glyphicon-remove
-                      Delete
-
+            %button.btn.btn-primary.btn-sm.btn-block{"data-target" => "#myModal2", "data-toggle" => "modal", :type => "button"}
+              show
       .col-md-4
         .panel.panel-primary
           .panel-heading
             %h2 Economics
           .panel-body
-            %table.table
-              %tr
-                %th Book
-                %th Edit
-                %th Delete
-
-              - @eco.each do |i|
-                %tr
-                  %td
-                    = link_to i ,class: 'no-style' do
-                      %span.glyphicon.glyphicon-book
-                      = i.book
-                  %td
-                    = link_to edit_study_path(i) ,class: 'btn btn-info' do
-                      %span.glyphicon.glyphicon-wrench
-                      Edit
-                  %td
-                    = link_to i,method: :delete ,class: 'btn btn-danger' do
-                      %span.glyphicon.glyphicon-remove
-                      Delete
+            %button.btn.btn-primary.btn-sm.btn-block{"data-target" => "#myModal3", "data-toggle" => "modal", :type => "button"}
+              show
     .row
       .col-md-4
         .panel.panel-primary
           .panel-heading
             %h2 Political science
           .panel-body
-            %table.table
-              %tr
-                %th Book
-                %th Edit
-                %th Delete
-
-              - @pol.each do |i|
-                %tr
-                  %td
-                    = link_to i ,class: 'no-style' do
-                      %span.glyphicon.glyphicon-book
-                      = i.book
-                  %td
-                    = link_to edit_study_path(i) ,class: 'btn btn-info' do
-                      %span.glyphicon.glyphicon-wrench
-                      Edit
-                  %td
-                    = link_to i,method: :delete ,class: 'btn btn-danger' do
-                      %span.glyphicon.glyphicon-remove
-                      Delete
+            %button.btn.btn-primary.btn-sm.btn-block{"data-target" => "#myModal4", "data-toggle" => "modal", :type => "button"}
+              show
       .col-md-4
         .panel.panel-primary
           .panel-heading
             %h2 Mechanical
           .panel-body
-            %table.table
-              %tr
-                %th Book
-                %th Edit
-                %th Delete
-
-              - @mec.each do |i|
-                %tr
-                  %td
-                    = link_to i ,class: 'no-style' do
-                      %span.glyphicon.glyphicon-book
-                      = i.book
-                  %td
-                    = link_to edit_study_path(i) ,class: 'btn btn-info' do
-                      %span.glyphicon.glyphicon-wrench
-                      Edit
-                  %td
-                    = link_to i,method: :delete ,class: 'btn btn-danger' do
-                      %span.glyphicon.glyphicon-remove
-                      Delete
+            %button.btn.btn-primary.btn-sm.btn-block{"data-target" => "#myModal5", "data-toggle" => "modal", :type => "button"}
+              show
       .col-md-4
         .panel.panel-primary
           .panel-heading
             %h2 Aptitude
           .panel-body
-            %table.table
-              %tr
-                %th Book
-                %th Edit
-                %th Delete
-
-              - @apti.each do |i|
-                %tr
-                  %td
-                    = link_to i ,class: 'no-style' do
-                      %span.glyphicon.glyphicon-book
-                      = i.book
-                  %td
-                    = link_to edit_study_path(i) ,class: 'btn btn-info' do
-                      %span.glyphicon.glyphicon-wrench
-                      Edit
-                  %td
-                    = link_to i,method: :delete ,class: 'btn btn-danger' do
-                      %span.glyphicon.glyphicon-remove
-                      Delete
+            %button.btn.btn-primary.btn-sm.btn-block{"data-target" => "#myModal6", "data-toggle" => "modal", :type => "button"}
+              show
   .col-md-3
     = link_to new_study_path,class: 'btn btn-primary' do
       %span.glyphicon.glyphicon-plus-sign
       Edit
 
+    .row
 
 
+#myModal.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h4#myModalLabel.modal-title History
+      .modal-body
+        %table.table
+          %tr
+            %th Book
+            %th Edit
+            %th Delete
+
+          - @his.each do |i|
+            %tr
+              %td
+                = link_to i ,class: 'no-style' do
+                  %span.glyphicon.glyphicon-book
+                  = i.book
+              %td
+                = link_to edit_study_path(i) ,class: 'btn btn-info' do
+                  %span.glyphicon.glyphicon-wrench
+                  Edit
+              %td
+                = link_to i,method: :delete ,class: 'btn btn-danger' do
+                  %span.glyphicon.glyphicon-remove
+                  Delete
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+#myModal2.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h4#myModalLabel2.modal-title Geography
+      .modal-body
+        %table.table
+          %tr
+            %th Book
+            %th Edit
+            %th Delete
+
+          - @geo.each do |i|
+            %tr
+              %td
+                = link_to i ,class: 'no-style' do
+                  %span.glyphicon.glyphicon-book
+                  = i.book
+              %td
+                = link_to edit_study_path(i) ,class: 'btn btn-info' do
+                  %span.glyphicon.glyphicon-wrench
+                  Edit
+              %td
+                = link_to i,method: :delete ,class: 'btn btn-danger' do
+                  %span.glyphicon.glyphicon-remove
+                  Delete
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+#myModal3.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h4#myModalLabel3.modal-title Economics
+      .modal-body
+        %table.table
+          %tr
+            %th Book
+            %th Edit
+            %th Delete
+
+          - @eco.each do |i|
+            %tr
+              %td
+                = link_to i ,class: 'no-style' do
+                  %span.glyphicon.glyphicon-book
+                  = i.book
+              %td
+                = link_to edit_study_path(i) ,class: 'btn btn-info' do
+                  %span.glyphicon.glyphicon-wrench
+                  Edit
+              %td
+                = link_to i,method: :delete ,class: 'btn btn-danger' do
+                  %span.glyphicon.glyphicon-remove
+                  Delete
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+#myModal4.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h4#myModalLabel4.modal-title Political science
+      .modal-body
+        %table.table
+          %tr
+            %th Book
+            %th Edit
+            %th Delete
+
+          - @pol.each do |i|
+            %tr
+              %td
+                = link_to i ,class: 'no-style' do
+                  %span.glyphicon.glyphicon-book
+                  = i.book
+              %td
+                = link_to edit_study_path(i) ,class: 'btn btn-info' do
+                  %span.glyphicon.glyphicon-wrench
+                  Edit
+              %td
+                = link_to i,method: :delete ,class: 'btn btn-danger' do
+                  %span.glyphicon.glyphicon-remove
+                  Delete
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+#myModal5.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h4#myModalLabel5.modal-title Mechanical
+      .modal-body
+        %table.table
+          %tr
+            %th Book
+            %th Edit
+            %th Delete
+
+          - @mec.each do |i|
+            %tr
+              %td
+                = link_to i ,class: 'no-style' do
+                  %span.glyphicon.glyphicon-book
+                  = i.book
+              %td
+                = link_to edit_study_path(i) ,class: 'btn btn-info' do
+                  %span.glyphicon.glyphicon-wrench
+                  Edit
+              %td
+                = link_to i,method: :delete ,class: 'btn btn-danger' do
+                  %span.glyphicon.glyphicon-remove
+                  Delete
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+#myModal6.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h4#myModalLabel6.modal-title Aptitude
+      .modal-body
+        %table.table
+          %tr
+            %th Book
+            %th Edit
+            %th Delete
+
+          - @apti.each do |i|
+            %tr
+              %td
+                = link_to i ,class: 'no-style' do
+                  %span.glyphicon.glyphicon-book
+                  = i.book
+              %td
+                = link_to edit_study_path(i) ,class: 'btn btn-info' do
+                  %span.glyphicon.glyphicon-wrench
+                  Edit
+              %td
+                = link_to i,method: :delete ,class: 'btn btn-danger' do
+                  %span.glyphicon.glyphicon-remove
+                  Delete
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
